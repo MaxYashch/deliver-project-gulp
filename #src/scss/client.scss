@@ -1,0 +1,48 @@
+.client {	
+	background-color: #ffffff;
+}
+
+.client-row {
+	margin: 52px auto;
+	display: flex;	
+	justify-content: space-between;	
+}
+
+.client-item {
+	border: 2px solid rgba(186,0,0,0.1);
+	background-color: #F9F9F9;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.client-item:hover {
+	border: 2px solid #ba0000;
+}
+
+.client-item__image{
+	margin: 40px 20px;
+}
+
+.client-item__image img{
+	max-width: 100%;
+	max-height: 100%;	
+}
+
+@media (max-width:600px) {
+	.client {
+		margin: 20px auto;
+	}
+	.client-item__image{
+		margin: 20px 10px;
+	}
+}
+
+@media (max-width:600px) {
+	.client {
+		margin: 20px auto;
+	}
+	.client-item__image{
+		margin: 5px;
+	}
+}

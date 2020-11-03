@@ -1,0 +1,130 @@
+.mainblock {
+	background: linear-gradient(45deg, #b90000 25%, rgba(255, 203, 0, 0) 70%), url("../img/bg.png") no-repeat  center / cover;
+	display: flex;		
+	flex-direction: column;	
+	justify-content: center;
+	align-items: center;
+	padding: 70px 0;
+	min-height: 800px;	
+
+	&__text {
+	display: flex;
+	flex-direction: column;	
+			
+	}
+	// .mainblock__title
+	&__title {
+		z-index: 10;		
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		color: #ffffff;
+		font-family: $Poppins;
+		font-size: calc(40px + 30 * ((100vw - 320px) / (1280 - 320)));
+		font-weight: 700;		
+		letter-spacing: 2.1px;
+		margin-bottom: 40px;	
+		&::after {			
+			content: '';
+			width: 100px;
+			height: 4px;
+			background-color: #ffcc00;
+			position: absolute;			
+			bottom: -52px;
+		}
+	}	
+		
+	&__subtitle {
+		max-width: 747px;
+		color: #ffcc00;
+		font-family: $Poppins;
+		font-size: 20px;		
+		line-height: 30px;		
+		letter-spacing: 0.6px;
+		margin-top: 40px;
+	}
+}
+
+@media (max-width:1200px) {
+	.mainblock {
+		margin: -70px 0px;
+	}
+}
+
+@media (max-width:768px) {
+	.mainblock {
+		margin: -120px 0px;
+	}
+}
+
+@media (max-width:320px) {
+	.mainblock__subtitle {
+		display: none;
+	}
+}
+
+.mainblock__features {
+	display: flex;
+	margin: 40px 0;
+}
+
+@media (max-width:520px) {
+	.mainblock__features {
+		display: none;
+	}
+}
+
+
+	.mainblock__feature {
+		// z-index: 10;			
+		display: flex;
+		color: #ffffff;
+		font-family: $Poppins;
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 30px;
+		text-transform: uppercase;			
+		letter-spacing: 0.6px;						
+	}
+
+	.mainblock__feature:after {
+		content:'';
+		width: 3px;
+		height: 3px;
+		border-radius: 50%;
+		margin: 17px 26px auto 26px;
+		background-color: #ffcc00;
+	}
+
+	.mainblock__feature:last-child {			
+		&:after{display: none;}
+	}
+
+	.mainblock__title.active {
+		display: none;
+	}	
+	
+	.mainblock__buttons {		
+		display: flex;
+		margin-top: 39px;
+	}	
+
+	.mainblock__buttons-learn {		
+		filter: drop-shadow(0px 10px 9px rgba(255,204,0,0.4));
+		background-color: #ffcc00;
+		margin-right: 19px;
+		color: #ba0000;
+		transition: .15s;
+	}
+
+	.mainblock__buttons-worldwide {
+		width: 193px;
+		height: 51px;		
+		border: 1px solid #ffffff;
+		background-color: transparent;
+		transition: .15s;
+	}
+
+	.mainblock__buttons-worldwide {
+		color: #ffffff;		
+	}

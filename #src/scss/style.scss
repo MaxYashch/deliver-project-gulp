@@ -1,0 +1,62 @@
+@import "nullstyle.scss";
+
+@font-face {
+	font-family: 'Font Awesome';
+	src: url('../../fonts/9712.eot');
+	src: local('☺'), url('../../fonts/9712.woff') format('woff'), url('../../fonts/9712.ttf') format('truetype'), url('../../fonts/9712.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+$Poppins: Poppins, Arial, Helvetica, sans-serif;
+
+.wrapper {
+	width: 100%;
+	min-height: 100%;	
+	display: flex;
+	flex-direction: column;
+	background-color: #000000;
+}
+
+.container {
+	max-width: 1210px;
+	margin: 0 auto;
+	padding: 0 20px;
+	width: 100%;
+}
+
+.ibg {background-position: center; background-size: cover; background-repeat: no-repeat;}
+
+.btn {
+    border-radius: 25px; 
+	font-weight: 700;
+	width: 150px;
+	height: 51px;
+	align-items: center;
+	text-align: center;	
+	letter-spacing: 1px;
+	font-family: $Poppins;	
+	text-transform: uppercase;	
+	font-size: 12px;	
+}
+
+.btn_active:active {
+	transform: scale(0.9);
+	box-shadow: none;
+}
+
+@import "header.scss";
+
+@import "mainblock.scss";
+
+@import "services.scss";
+
+@import "video-block.scss";
+
+@import "locationForm.scss";
+
+@import "features.scss";
+
+@import "client.scss";
+
+@import "footer.scss";
