@@ -76,8 +76,6 @@
 
 
 
-
-
 .location-form-bottom-row {
 	display: flex;
 	position: relative;
@@ -103,19 +101,13 @@
 	max-width: 50%;
 }
 
-
-
 .form-header {
-	display: flex;
-	flex-wrap: wrap;
-	list-style-type: none;
-	flex: 1 0 auto;
+	display: grid;
+	grid-template-columns: 50% 50%;
 }
 
 .form-header__express {
 	padding: 20px 20px 20px 20px;
-	flex-shrink: 0;
-    flex-grow: 1;
 	font-size: 14px;
 	letter-spacing: 2px;
 	line-height: 24px;
@@ -131,8 +123,6 @@
 
 .form-header__logistics {
 	padding: 20px 20px 20px 20px;
-	flex-shrink: 0;
-    flex-grow: 1;	
 	align-items: center;
 	justify-content: center;
 	font-size: 14px;
@@ -146,12 +136,6 @@
 	font-weight: bold;
 	cursor: pointer;
 }
-
-
-
-
-
-
 
 .form-body {
 	padding: 40px;
@@ -260,11 +244,6 @@
 	background-color: #ba0000;
 }
 
-.accordeon-item__body-red {
-	border: 3px solid #ba0000;
-	border-top: none;
-}
-
 .form-body__item-list-active-dropdown {
 	display: inline-block;
 }
@@ -298,16 +277,6 @@
 	content: '';
 	position: absolute;
 	border-left: 7px solid  #ffcc00;
-	border-top: 7px solid transparent;
-	border-bottom: 7px solid transparent;	
-	left: -22px;
-	top: 6px;	
-}
-
-.accordeon-item__content-text ul li a.red-before::before {
-	content: '';
-	position: absolute;
-	border-left: 7px solid  #ba0000;
 	border-top: 7px solid transparent;
 	border-bottom: 7px solid transparent;	
 	left: -22px;
@@ -481,49 +450,4 @@
 	position: absolute;
 	left: 0;
 	bottom: 0;
-}
-
-
-// стили для carriage-tabs
-.form-body__y,
-.form-body__y div,
-.form-body__y span,
-.form-body__y ul li a {
-	background-color:#ffcc00;
-	color: #ba0000;
-}
-
-.head-red {
-	border: 3px solid #ba0000;;
-	color: #ba0000;
-}
-
-.head-red > .accordeon-item__head-button {
-	border-left: 3px solid #ba0000;
-}
-
-.head-red > .accordeon-item__head-button::after {	
-	border-left: 1px solid #ba0000;
-	border-bottom: 1px solid #ba0000;
-}
-
-.accordeon-item.open .head-red > .accordeon-item__head-button::after {
-	border-left: 1px solid #ba0000;
-	border-bottom: 1px solid #ba0000;
-}
-
-.form-header__link--active {	
-	cursor: default;
-}
-
-.form-body__pane {
-display: none;
-}
-
-.form-body__pane--show {
-display: block;
-}
-
-.form-header__link--active > .location-form-bottom-row__form {
-	background-color: #ffcc00;
 }

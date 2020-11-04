@@ -938,12 +938,24 @@ h6 {
 }
 
 .form-header {
-  display: grid;
-  grid-template-columns: 50% 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style-type: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
 }
 
 .form-header__express {
   padding: 20px 20px 20px 20px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   font-size: 14px;
   letter-spacing: 2px;
   line-height: 24px;
@@ -961,6 +973,11 @@ h6 {
 
 .form-header__logistics {
   padding: 20px 20px 20px 20px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1111,6 +1128,11 @@ h6 {
   background-color: #ba0000;
 }
 
+.accordeon-item__body-red {
+  border: 3px solid #ba0000;
+  border-top: none;
+}
+
 .form-body__item-list-active-dropdown {
   display: inline-block;
 }
@@ -1152,6 +1174,16 @@ h6 {
   top: 6px;
 }
 
+.accordeon-item__content-text ul li a.red-before::before {
+  content: '';
+  position: absolute;
+  border-left: 7px solid  #ba0000;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  left: -22px;
+  top: 6px;
+}
+
 .location-form-bottom-row__image-border {
   width: 431px;
   height: 499px;
@@ -1178,6 +1210,49 @@ h6 {
   position: absolute;
   left: 0;
   bottom: 0;
+}
+
+.form-body__y,
+.form-body__y div,
+.form-body__y span,
+.form-body__y ul li a {
+  background-color: #ffcc00;
+  color: #ba0000;
+}
+
+.head-red {
+  border: 3px solid #ba0000;
+  color: #ba0000;
+}
+
+.head-red > .accordeon-item__head-button {
+  border-left: 3px solid #ba0000;
+}
+
+.head-red > .accordeon-item__head-button::after {
+  border-left: 1px solid #ba0000;
+  border-bottom: 1px solid #ba0000;
+}
+
+.accordeon-item.open .head-red > .accordeon-item__head-button::after {
+  border-left: 1px solid #ba0000;
+  border-bottom: 1px solid #ba0000;
+}
+
+.form-header__link--active {
+  cursor: default;
+}
+
+.form-body__pane {
+  display: none;
+}
+
+.form-body__pane--show {
+  display: block;
+}
+
+.form-header__link--active > .location-form-bottom-row__form {
+  background-color: #ffcc00;
 }
 
 .features {
