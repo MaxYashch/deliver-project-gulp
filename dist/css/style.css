@@ -1278,7 +1278,6 @@ h6 {
 .features-row-block__title {
   font-size: 30px;
   letter-spacing: 1px;
-  line-height: 24px;
   color: #ffffff;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   text-transform: uppercase;
@@ -1901,7 +1900,6 @@ h6 {
 
   .features-row-block__title {
     font-size: 20px;
-    line-height: 16px;
     margin-bottom: 20px;
   }
 
